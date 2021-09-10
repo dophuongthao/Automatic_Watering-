@@ -1,8 +1,8 @@
 
 #include <SoftwareSerial.h>
 #include <dht11.h>
-#define RX 0
-#define TX 1
+#define RX 3
+#define TX 2
 #define DEBUG true  
 #define DHT_PIN 11
 // tạo đối tượng dhtObject
@@ -18,7 +18,7 @@ String gPort = "80";
 int CountTrueCommand;
 int CountTimeCommand; 
 boolean found = false; 
-SoftwareSerial esp8266(RX,TX);
+SoftwareSerial esp8266(TX,RX);
 
   
 void setup()
